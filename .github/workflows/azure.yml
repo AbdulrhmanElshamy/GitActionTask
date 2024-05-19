@@ -17,7 +17,7 @@ jobs:
 
     strategy:
       matrix:
-        environment: [dev, test, prod]
+        environment: [main,dev, test, prod]
 
     steps:
       - uses: actions/checkout@v3
