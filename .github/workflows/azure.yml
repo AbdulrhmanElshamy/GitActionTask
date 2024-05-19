@@ -31,7 +31,7 @@ jobs:
         run: dotnet restore ./GitActionTask.sln
 
       - name: Build
-        run: dotnet build ./GitActionTask.sln --configuration Release --no-restore
+        run: dotnet build ./GitActionTask.sln --configuration Release
 
       - name: Publish
         run: dotnet publish ./GitActionTask.sln --configuration Release --no-build --output '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}'
